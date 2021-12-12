@@ -214,9 +214,6 @@ function HomePage() {
 	return (
 		<>
 			<CryptoBar data={cryptoData} currency={currency} />
-			<Alert sx={{ mb: 4 }} severity="info">
-				Only up to 4000 scholars are supported at the moment.
-			</Alert>
 			<Grid
 				container
 				spacing={2}

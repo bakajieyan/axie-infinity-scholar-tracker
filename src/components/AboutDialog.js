@@ -59,31 +59,31 @@ function AboutDialog(props) {
                     <Typography color="text.primary" sx={{ fontSize: 50 }}>
                         <a
                             style={{ textDecoration: 'none', color: theme.palette.primary.main, margin: '10px' }}
-                            href="https://github.com/vlipatdev"
+                            href="https://www.facebook.com/ApeArmyGuild"
                         >
                             <FaFacebook />
                         </a>
                         <a
                             style={{ textDecoration: 'none', color: theme.palette.primary.main, margin: '10px' }}
-                            href="https://github.com/vlipatdev"
+                            href="https://twitter.com/ApeArmyGuild"
                         >
                             <FaTwitter />
                         </a>
                         <a
                             style={{ textDecoration: 'none', color: theme.palette.primary.main, margin: '10px' }}
-                            href="https://github.com/vlipatdev"
+                            href="https://www.instagram.com/dailygrindp2e/"
                         >
                             <FaInstagram />
                         </a>
                         <a
                             style={{ textDecoration: 'none', color: theme.palette.primary.main, margin: '10px' }}
-                            href="https://github.com/vlipatdev"
+                            href="https://t.me/+tMwdasxX3eU1NmQ1"
                         >
                             <FaTelegram />
                         </a>
                         <a
                             style={{ textDecoration: 'none', color: theme.palette.primary.main, margin: '10px' }}
-                            href="https://github.com/vlipatdev"
+                            href="https://discord.gg/pSePvYwDtB"
                         >
                             <FaDiscord />
                         </a>
