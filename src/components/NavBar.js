@@ -46,7 +46,6 @@ function NavBar() {
 						},
 					}}
 				>
-					Axie Scholar Tracker
 				</Typography>
 				<Tooltip title="About">
 					<Button onClick={handleClick} sx={{ color: 'white' }}>

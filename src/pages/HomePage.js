@@ -136,15 +136,15 @@ function HomePage() {
 				const JSONdata = JSON.parse(event.target.result);
 				// very simple JSON validation
 				if (JSONdata[0].name && JSONdata[0].ronin_address && JSONdata[0].manager_share) {
-					if (JSONdata.length > 100) {
-						alert('Only JSON files with max 100 ronin addresses are allowed at the moment.');
+					if (JSONdata.length > 4000) {
+						alert('Only JSON files with max 4000 ronin addresses are allowed at the moment.');
 					} else {
 						setLocalData(JSONdata);
 					}
 					// very simple validation for JSON from https://axie-scho-tracker.xyz/
 				} else if (JSONdata[0].name && JSONdata[0].eth && JSONdata[0].managerShare) {
-					if (JSONdata.length > 100) {
-						alert('Only JSON files with max 100 ronin addresses are allowed at the moment.');
+					if (JSONdata.length > 4000) {
+						alert('Only JSON files with max 4000 ronin addresses are allowed at the moment.');
 					} else {
 						const convertedJSONData = JSONdata.map((item) => {
 							return {
@@ -215,7 +215,7 @@ function HomePage() {
 		<>
 			<CryptoBar data={cryptoData} currency={currency} />
 			<Alert sx={{ mb: 4 }} severity="info">
-				Only up to 100 scholars are supported at the moment.
+				Only up to 4000 scholars are supported at the moment.
 			</Alert>
 			<Grid
 				container
@@ -355,7 +355,6 @@ function HomePage() {
 						flexDirection: 'column',
 					}}
 				>
-					<img src={axie} alt="axie" style={{ height: '150px', margin: '32px' }} />
 					<Typography sx={{ mb: 10 }} color="text.secondary">
 						No scholars added
 					</Typography>

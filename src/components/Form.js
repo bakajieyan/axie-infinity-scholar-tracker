@@ -56,8 +56,8 @@ function Form(props) {
 		},
 		validationSchema: validationSchema,
 		onSubmit: (values, { resetForm }) => {
-			if (numScholars >= 100) {
-				alert('Only 100 scholars are allowed at the moment.');
+			if (numScholars >= 4000) {
+				alert('Only 4000 scholars are allowed at the moment.');
 			} else {
 				const newValues = { ...values, manager_share: values.manager_share.toString() };
 				setFromDelete(false);

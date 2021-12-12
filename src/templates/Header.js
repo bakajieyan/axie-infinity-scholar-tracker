@@ -31,7 +31,7 @@ function Header() {
 					src={axieLogo}
 					alt="axie logo"
 					style={{
-						height: '80px',
+						height: '120px',
 						marginBottom: '16px',
 					}}
 				/>

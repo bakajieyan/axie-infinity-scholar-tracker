@@ -1,4 +1,4 @@
-import Avatar from '@mui/material/Avatar';
+import { FaFacebook, FaDiscord, FaInstagram, FaTwitter, FaTelegram } from 'react-icons/fa';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
@@ -12,81 +12,107 @@ import profile from '../images/profile.jpg';
 import theme from '../theme';
 
 function AboutDialog(props) {
-	const { open, onClose } = props;
+    const { open, onClose } = props;
 
-	return (
-		<Dialog open={open} onClose={onClose}>
-			<DialogTitle>About</DialogTitle>
-			<DialogContent>
-				<Typography>
-					This is an unofficial scholar tracker for{' '}
-					<a
-						href="https://axieinfinity.com/"
-						style={{ textDecoration: 'none', color: theme.palette.primary.main }}
-					>
-						Axie Infinity
+    return (
+        <Dialog open={open} onClose={onClose}>
+            <DialogTitle>About</DialogTitle>
+            <DialogContent>
+                <Typography>
+                    This is a scholar tracker for{' '}
+                    <a
+                        href="https://axieinfinity.com/"
+                        style={{ textDecoration: 'none', color: theme.palette.primary.main }}
+                    >
+                        Ape Army Guild
 					</a>
 					.
 				</Typography>
-				<br />
-				<Typography>
-					Future releases will include daily SLP data, table customization, multiple currencies,
-					JSON support for other trackers, dark mode, and more.
-				</Typography>
-				<br />
-				<Typography>
-					Data provided by{' '}
-					<a
-						href="https://skymavis.com/"
-						style={{ textDecoration: 'none', color: theme.palette.primary.main }}
-					>
-						Sky Mavis
+                <br />
+                <Typography>
+                    Data provided by{' '}
+                    <a
+                        href="https://skymavis.com/"
+                        style={{ textDecoration: 'none', color: theme.palette.primary.main }}
+                    >
+                        Sky Mavis
 					</a>
 					. Crypto prices courtesy of{' '}
-					<a
-						href="https://www.coingecko.com/en/api"
-						style={{ textDecoration: 'none', color: theme.palette.primary.main }}
-					>
-						CoinGecko
+                    <a
+                        href="https://www.coingecko.com/en/api"
+                        style={{ textDecoration: 'none', color: theme.palette.primary.main }}
+                    >
+                        CoinGecko
 					</a>
 					.
 				</Typography>
-				<br />
-				<Typography>
-					<a
-						href="mailto:610b145c-e385-48c8-bf7f-c4b9a2468b18@simplelogin.co?subject= Axie Scholar Tracker Bug"
-						style={{ textDecoration: 'none', color: theme.palette.primary.main }}
-					>
-						Report bugs or send suggestions
-					</a>
-					.
-				</Typography>
-				<Box
-					sx={{
-						display: 'flex',
-						alignItems: 'center',
-						justifyContent: 'center',
-						mt: 4,
-					}}
-				>
-					<Avatar src={profile} sx={{ mr: 1, height: 35, width: 35 }} />
-					<Typography color="text.primary" sx={{ fontSize: 14 }}>
-						by{' '}
-						<a
-							style={{ textDecoration: 'none', color: theme.palette.primary.main }}
-							href="https://github.com/vlipatdev"
-						>
-							vlipatdev
+                <br />
+                
+                <Box
+                    sx={{
+                        display: 'flex',
+                        textDecoration: 'none',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        mt: 4,
+                    }}>
+                    <Typography color="text.primary" sx={{ fontSize: 50 }}>
+                        <a
+                            style={{ textDecoration: 'none', color: theme.palette.primary.main, margin: '10px' }}
+                            href="https://github.com/vlipatdev"
+                        >
+                            <FaFacebook />
+                        </a>
+                        <a
+                            style={{ textDecoration: 'none', color: theme.palette.primary.main, margin: '10px' }}
+                            href="https://github.com/vlipatdev"
+                        >
+                            <FaTwitter />
+                        </a>
+                        <a
+                            style={{ textDecoration: 'none', color: theme.palette.primary.main, margin: '10px' }}
+                            href="https://github.com/vlipatdev"
+                        >
+                            <FaInstagram />
+                        </a>
+                        <a
+                            style={{ textDecoration: 'none', color: theme.palette.primary.main, margin: '10px' }}
+                            href="https://github.com/vlipatdev"
+                        >
+                            <FaTelegram />
+                        </a>
+                        <a
+                            style={{ textDecoration: 'none', color: theme.palette.primary.main, margin: '10px' }}
+                            href="https://github.com/vlipatdev"
+                        >
+                            <FaDiscord />
+                        </a>
+                    </Typography>
+                </Box>
+                <Box
+                    sx={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        mt: 4,
+                    }}
+                >
+                    <Typography color="text.primary" sx={{ fontSize: 14 }}>
+                        forked from{' '}
+                        <a
+                            style={{ textDecoration: 'none', color: theme.palette.primary.main }}
+                            href="https://github.com/vlipatdev"
+                        >
+                            vlipatdev
 						</a>{' '}
-						with ❤️
-					</Typography>
-				</Box>
-			</DialogContent>
-			<DialogActions>
-				<Button onClick={onClose}>Okay</Button>
-			</DialogActions>
-		</Dialog>
-	);
+                    </Typography>
+                </Box>
+            </DialogContent>
+            <DialogActions>
+                <Button onClick={onClose}>Okay</Button>
+            </DialogActions>
+        </Dialog>
+    );
 }
 
 export default AboutDialog;
