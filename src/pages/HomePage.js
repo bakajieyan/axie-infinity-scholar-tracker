@@ -5,7 +5,6 @@ import { LocalDataContext } from '../contexts/LocalDataContext';
 import { CSVLink } from 'react-csv';
 import FileSaver from 'file-saver';
 
-import Alert from '@mui/material/Alert';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import CircularProgress from '@mui/material/CircularProgress';
@@ -26,7 +25,6 @@ import Form from '../components/Form';
 import SortBySelect from '../components/SortBySelect';
 import SortTypeSelect from '../components/SortTypeSelect';
 
-import axie from '../images/axie.png';
 
 import { calcTotal, sortArray } from '../utils';
 import { fetchCryptoData, fetchScholarData } from '../requests';
