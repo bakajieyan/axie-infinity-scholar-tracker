@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useContext, useEffect, useState } from 'react';
 import { FromDeleteContext } from '../contexts/FromDeleteContext';
 import { LocalDataContext } from '../contexts/LocalDataContext';
@@ -79,7 +80,7 @@ function HomePage() {
 			.catch(() => {
 				alert('Error fetching crypto data. Please try again later.');
 			});
-	}, [currency]);
+	}, []);
 
 	useEffect(() => {
 		setAddresses(localData.map((scholar) => scholar.ronin_address));
@@ -110,7 +111,7 @@ function HomePage() {
 		} else {
 			setData([]);
 		}
-	}, [addresses, data, fromDelete, localData]);
+	}, [addresses]);
 
 	function handleLocalDataUpdate(data) {
 		setLocalData(data);
