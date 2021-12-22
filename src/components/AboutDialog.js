@@ -7,8 +7,6 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
 import Typography from '@mui/material/Typography';
 
-import profile from '../images/profile.jpg';
-
 import theme from '../theme';
 
 function AboutDialog(props) {

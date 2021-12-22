@@ -79,7 +79,7 @@ function HomePage() {
 			.catch(() => {
 				alert('Error fetching crypto data. Please try again later.');
 			});
-	}, []);
+	}, [currency]);
 
 	useEffect(() => {
 		setAddresses(localData.map((scholar) => scholar.ronin_address));
@@ -110,7 +110,7 @@ function HomePage() {
 		} else {
 			setData([]);
 		}
-	}, [addresses]);
+	}, [addresses, data, fromDelete, localData]);
 
 	function handleLocalDataUpdate(data) {
 		setLocalData(data);

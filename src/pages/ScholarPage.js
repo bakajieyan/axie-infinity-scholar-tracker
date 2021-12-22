@@ -45,7 +45,7 @@ function ScholarPage() {
 				manager_share: scholarProfile.manager_share,
 			});
 		}
-	}, [localData]);
+	}, [localData, history, scholarName, setFromDelete]);
 
 	const validationSchema = yup.object({
 		name: yup
