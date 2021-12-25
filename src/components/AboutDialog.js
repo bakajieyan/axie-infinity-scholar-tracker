@@ -45,7 +45,7 @@ function AboutDialog(props) {
 					.
 				</Typography>
                 <br />
-                
+
                 <Box
                     sx={{
                         display: 'flex',
@@ -105,6 +105,10 @@ function AboutDialog(props) {
 						</a>{' '}
                     </Typography>
                 </Box>
+            </DialogContent>
+            <DialogTitle>Donate</DialogTitle>
+            <DialogContent>
+                <Typography>ronin:c4c5a46f53525d667d961a1e01e6809119be1c65</Typography>
             </DialogContent>
             <DialogActions>
                 <Button onClick={onClose}>Okay</Button>
